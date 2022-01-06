@@ -1,0 +1,48 @@
+html,
+body,
+.wrapper {
+    margin: 0;
+    padding: 0;
+    /* display: flex; */
+    /* position:relative; */
+    height: 100%;
+    width: 100%;
+}
+.wrapper {
+    position: relative;
+}
+.narrow, .wide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: calc(100vh - 60px);
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    border: 1px solid black;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.narrow {
+    width: 400px;
+    background-color: white;
+}
+
+.wide {
+    width: 960px;
+    min-width: 400px;
+    max-width: 960px;
+    background-color: white;
+}
+.wrapper:hover {
+    background-color: #e9e6d3;
+}
+.numberCards {
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
